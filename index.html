@@ -59,7 +59,7 @@ body {
   inset: -15px;
   z-index: -2;
 
-  background-image: url("assets/page1.jpg");
+  background-image: url("assets/page.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,17 +116,29 @@ body {
 }
 
 .monogram {
-  width: 64px;
-  height: 64px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin: 0 auto 26px;
-  color: var(--wine);
-  font: italic 1.6rem "Cormorant Garamond";
-  background: rgba(251,246,238,.85);
-  animation: monogramPop 1s .2s both;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #f8f2e9;
+    border: 1px solid #b89560;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin: 0 auto 20px;
+    font-family: 'Italianno', cursive;
+    font-size: 25px;
+}
+
+.monogram .initial {
+    display: inline;
+}
+
+.monogram .ampersand {
+    color: #b89560;
+    font-size: 18px;
+    margin: 1px 0;
 }
 
 .eyebrow,.label {
@@ -857,8 +869,11 @@ footer {
   <div class="cover-overlay" aria-hidden="true"></div>
 
   <div class="cover-content">
-    <div class="monogram">N <span style="color:#b89560">&</span> J</div>
-
+<div class="monogram">
+    <span class="initial">N</span>
+    <span class="ampersand">&</span>
+    <span class="initial">J</span>
+</div>
     <div class="eyebrow">A new chapter begins</div>
 
     <h1>
